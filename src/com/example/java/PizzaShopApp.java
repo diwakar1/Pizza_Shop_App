@@ -77,8 +77,10 @@ public class PizzaShopApp {
         System.out.println("Do you want to order another pizza? Y or N");
          response = in.nextLine();
     }
-        for (int i = 0; i < pizzas.size(); i++) {
-            pizzas.get(i).printString();
+        for (Pizza p:pizzas)
+        {
+           p.printString();
+
         }
 
 
